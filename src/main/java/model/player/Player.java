@@ -6,17 +6,17 @@ import java.util.Objects;
 
 public class Player {
 
-    private int id;
+    private PlayerId id;
     private String name;
     private String licenceNumber;
 
     private Address address;
 
-    public int getId() {
+    public PlayerId getId() {
         return id;
     }
 
-    public Player setId(int id) {
+    public Player setId(PlayerId id) {
         this.id = id;
         return this;
     }

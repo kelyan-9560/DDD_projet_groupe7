@@ -6,12 +6,10 @@ import java.util.List;
 
 public interface PoolRepository {
 
-
     Pool save(Pool pool);
     Pool getById(int id);
 
     void addPlayer(int poolId, Player player);
-
 
     void addPlayers(int poolId, List<Player> players);
 
