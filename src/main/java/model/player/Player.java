@@ -1,5 +1,7 @@
 package model.player;
 
+import model.address.Address;
+
 import java.util.Objects;
 
 public class Player {
@@ -8,6 +10,7 @@ public class Player {
     private String name;
     private String licenceNumber;
 
+    private Address address;
 
     public int getId() {
         return id;
@@ -27,6 +30,15 @@ public class Player {
         return this;
     }
 
+    public Address getAddress() {
+        return address;
+    }
+
+    public Player setAddress(Address address) {
+        this.address = address;
+        return this;
+    }
+
     public String getLicenceNumber() {
         return licenceNumber;
     }
@@ -34,13 +46,6 @@ public class Player {
     public Player setLicenceNumber(String licenceNumber) {
         this.licenceNumber = licenceNumber;
         return this;
-    }
-
-    public void check(){
-        if(this.name == "")
-            throw new PlayerNameMissingException();
-        if(this.licenceNumber == "")
-            throw new PlayerLicenseNumberMissingException();
     }
 
     @Override

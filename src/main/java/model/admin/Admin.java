@@ -1,10 +1,13 @@
 package model.admin;
 
+import model.address.Address;
+
 import java.util.Objects;
 
 public class Admin {
     private int id;
     private String name;
+    private Address address;
 
     public int getId() {
         return id;
@@ -21,6 +24,15 @@ public class Admin {
 
     public Admin setName(String name) {
         this.name = name;
+        return this;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public Admin setAddress(Address address) {
+        this.address = address;
         return this;
     }
 

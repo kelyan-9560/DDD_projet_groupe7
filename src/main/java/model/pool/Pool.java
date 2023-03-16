@@ -49,10 +49,4 @@ public class Pool {
         return this;
     }
 
-    public void check(){
-        if(Objects.equals(this.name, "")){
-            throw new PoolNameMissingException();
-        }
-    }
-
 }
