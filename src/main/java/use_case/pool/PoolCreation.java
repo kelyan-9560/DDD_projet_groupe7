@@ -10,15 +10,26 @@ import java.util.List;
 public class PoolCreation {
 
     public List<Pool> create(List<Player> players, int tournamentId) {
-        List<Pool> pools = new ArrayList<>();
-        for (int i = 0; i < players.size(); i+=3) {
-            var pool = new Pool()
-                    .setId(i)
-                    .setName("Pool " + i)
-                    .setTournamentId(tournamentId);
-            pools.add(pool);
+        int peoplePerPool = 3;
+
+        List<Pool> resPools = new ArrayList<>();
+        List<Player> playerInPool = new ArrayList<>();
+        for (int i = 0; i < players.size(); i++) {
+            if(playerInPool.size() < peoplePerPool){
+                playerInPool.add(players.get(i));
+            }
+            if(playerInPool.size() == peoplePerPool) {
+                var pool = new Pool()
+                        .setId(i)
+                        .setName("Pool " + i)
+                        .setTournamentId(tournamentId)
+                        .setPlayers(playerInPool);
+                resPools.add(pool);
+
+                playerInPool.clear();
+            }
         }
-        return pools;
+        return resPools;
     }
 
 }

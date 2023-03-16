@@ -4,27 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1dd5b75-56cd-4cf9-adc8-443ed6c445ea" name="Changes" comment="Init project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/player/PlayerLicenseNumberMissingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/player/PlayerNameMissingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/pool/PoolNameMissingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentNameMissingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentTypeNameMissingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/use_case/pool/PoolCreationTest.java" afterDir="false" />
+    <list default="true" id="5e32c3ac-e8e8-43d8-bc3a-a6482ffe968f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/pool/Pool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/pool/Pool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/use_case/pool/PoolCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/use_case/pool/PoolCreation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/use_case/tounament/SetupTournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/use_case/tounament/SetupTournament.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/use_case/tounament/SetupTournamentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/use_case/tounament/SetupTournamentTest.java" afterDir="false" />
-    </list>
-    <list id="e3163646-f46f-400f-aa44-831d54478fbc" name="Changes by jehan" comment="" />
-    <list id="d62b887b-baee-44d2-ad7b-7d0081b88f93" name="Changes by xof" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/pool/Pool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/pool/Pool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/tournament/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tournament/Tournament.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/use_case/pool/PoolCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/use_case/pool/PoolCreationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,23 +29,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/model/pool/Pool.java">
-      <ranges>
-        <range start1="3" end1="4" start2="3" end2="3" changelist="c1dd5b75-56cd-4cf9-adc8-443ed6c445ea" />
-        <range start1="5" end1="6" start2="4" end2="4" changelist="c1dd5b75-56cd-4cf9-adc8-443ed6c445ea" />
-        <range start1="7" end1="7" start2="5" end2="6" changelist="d62b887b-baee-44d2-ad7b-7d0081b88f93" />
-        <range start1="16" end1="28" start2="15" end2="15" changelist="c1dd5b75-56cd-4cf9-adc8-443ed6c445ea" />
-        <range start1="63" end1="63" start2="50" end2="57" changelist="d62b887b-baee-44d2-ad7b-7d0081b88f93" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/model/player/Player.java">
-      <ranges>
-        <range start1="10" end1="16" start2="10" end2="10" changelist="c1dd5b75-56cd-4cf9-adc8-443ed6c445ea" />
-        <range start1="44" end1="44" start2="38" end2="45" changelist="d62b887b-baee-44d2-ad7b-7d0081b88f93" />
-      </ranges>
-    </file>
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="4p2nuoib" />
@@ -86,24 +52,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/Users/ahmad/Downloads/DDD_projet_groupe7/src/main/java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ahmad/Downloads/DDD_projet_groupe7/src/main/java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="model.tournament" />
