@@ -9,6 +9,13 @@ import java.util.List;
 
 public class PoolCreation {
 
+
+    //TODO : Passer les id
+    //TODO: injecter les repos
+
+
+    // TODO: déplacer la logiquer dans la classe pool
+
     public List<Pool> create(List<Player> players, int tournamentId) {
         int peoplePerPool = 3;
 

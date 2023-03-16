@@ -22,5 +22,10 @@ public class Address {
         this.zipCode = zipCode;
     }
 
-
+    //TODO : Ajouter les vérifications
+    //      - street non vide
+    //      - city non vide
+    //      - zipCode non vide
+    //      - zipCode est un nombre
+    //      - zipCode est un nombre de 4 chiffres
 }

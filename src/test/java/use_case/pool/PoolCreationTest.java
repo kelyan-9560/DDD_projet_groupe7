@@ -61,12 +61,7 @@ public class PoolCreationTest {
         PoolCreation poolCreation = new PoolCreation();
 
         var pools = poolCreation.create(players, tournament.getId());
-
-        System.out.println(pools.get(pools.size()-1).getId());
-        System.out.println(pools.get(pools.size()-1).getName());
-        System.out.println(pools.get(pools.size()-1).getTournamentId());
-        System.out.println(pools.get(pools.size()-1).getPlayers());
-
+        
         assertEquals(2, pools.get(pools.size()-1).getPlayers().size());
     }
 }
