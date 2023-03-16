@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1dd5b75-56cd-4cf9-adc8-443ed6c445ea" name="Changes" comment="Init project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/use_case/tounament/SetupTournament.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/use_case/tounament/SetupTournamentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/pool/Pool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/pool/Pool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/pool/PoolRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/pool/PoolRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/tournament/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tournament/Tournament.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
-    <list id="e3163646-f46f-400f-aa44-831d54478fbc" name="Changes by jehan" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/admin/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/admin/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/admin/AdminRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/admin/AdminRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/player/PlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/player/PlayerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/use_case/pool/PoolCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/use_case/pool/PoolCreation.java" afterDir="false" />
-    </list>
+    <list id="e3163646-f46f-400f-aa44-831d54478fbc" name="Changes by jehan" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +23,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -67,6 +58,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/kekeb/Documents/ESGI/4eme_annee/jee/FrameworkJeeGroupe7",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,6 +72,12 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="model.tournament" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="use_case.tounament" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -87,7 +87,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678881346055</updated>
-      <workItem from="1678881347523" duration="8439000" />
+      <workItem from="1678881347523" duration="8442000" />
+      <workItem from="1678956638622" duration="345000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1678881487583</created>
