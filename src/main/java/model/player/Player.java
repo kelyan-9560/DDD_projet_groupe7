@@ -9,12 +9,6 @@ public class Player {
     private String licenceNumber;
 
 
-    public Player(int id, String name, String licenceNumber) {
-        this.id = id;
-        this.name = name;
-        this.licenceNumber = licenceNumber;
-    }
-
     public int getId() {
         return id;
     }
@@ -40,6 +34,13 @@ public class Player {
     public Player setLicenceNumber(String licenceNumber) {
         this.licenceNumber = licenceNumber;
         return this;
+    }
+
+    public void check(){
+        if(this.name == "")
+            throw new PlayerNameMissingException();
+        if(this.licenceNumber == "")
+            throw new PlayerLicenseNumberMissingException();
     }
 
     @Override

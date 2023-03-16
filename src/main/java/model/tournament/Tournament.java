@@ -1,5 +1,7 @@
 package model.tournament;
 
+import java.util.Objects;
+
 public class Tournament {
 
     private int id;
@@ -31,5 +33,10 @@ public class Tournament {
     public Tournament setType(TournamentType type) {
         this.type = type;
         return this;
+    }
+
+    public void check(){
+        if(Objects.equals(this.name, "")) throw new TournamentNameMissingException();
+        this.type.check();
     }
 }
