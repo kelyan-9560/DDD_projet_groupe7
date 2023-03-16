@@ -43,21 +43,6 @@ public class Verifier implements Verification{
     public void checkAdmin(Admin admin) {
         if (Objects.equals(admin.getName(), ""))
             throw new AdminMissingException();
-        checkAddress(admin.getAddress());
     }
 
-    @Override
-    public void checkAddress(Address address) {
-        if (address == null) {
-            throw new NullPointerException("Address is null");
-        }
-        if (Objects.equals(address.city, ""))
-            throw new AddressCityMissingException();
-
-        if (Objects.equals(address.street, ""))
-            throw new AddressStreetMissingException();
-
-        if (Objects.equals(address.zipCode, ""))
-            throw new AddressZipCodeMissingException();
-    }
 }
