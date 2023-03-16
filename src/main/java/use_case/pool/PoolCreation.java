@@ -21,7 +21,6 @@ public class PoolCreation {
         if(players.size() != 3){
             //todo error
         }
-
         return  poolRepository.save(new Pool().setId(1).setPlayers(players).setName(name));
     }
 
