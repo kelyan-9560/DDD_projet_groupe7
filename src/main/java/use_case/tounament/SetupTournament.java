@@ -19,8 +19,9 @@ public class SetupTournament {
     }
 
     public Tournament setupTournament(int tournamentId, List<Player> players) {
-
         var tournament = tournamentRepository.getById(tournamentId);
+
+        //var pool = new Pool().setUp(tournament, players);
 
         for (int i = 0; i < players.size()/3; i+=3) {
             var pool = new Pool()

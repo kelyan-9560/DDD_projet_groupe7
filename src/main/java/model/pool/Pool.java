@@ -1,7 +1,9 @@
 package model.pool;
 
 import model.player.Player;
+import model.tournament.Tournament;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Pool {
@@ -11,6 +13,18 @@ public class Pool {
     private String name;
     private int tournamentId;
 
+
+    public List<Pool> setUp(Tournament tournament, List<Player> players) {
+        List<Pool> pools = new ArrayList<>();
+        for (int i = 0; i < players.size()/3; i+=3) {
+            var pool = new Pool()
+                    .setId(i)
+                    .setName("Pool " + i)
+                    .setTournamentId(tournament.getId());
+            pools.add(pool);
+        }
+        return pools;
+    }
 
     public int getId() {
         return id;

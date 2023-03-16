@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1dd5b75-56cd-4cf9-adc8-443ed6c445ea" name="Changes" comment="Init project">
-      <change afterPath="$PROJECT_DIR$/src/test/java/use_case/tounament/SetupTournamentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/pool/Pool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/pool/Pool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/pool/PoolRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/pool/PoolRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/use_case/tounament/SetupTournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/use_case/tounament/SetupTournament.java" afterDir="false" />
     </list>
     <list id="e3163646-f46f-400f-aa44-831d54478fbc" name="Changes by jehan" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678881346055</updated>
       <workItem from="1678881347523" duration="8442000" />
-      <workItem from="1678956638622" duration="345000" />
+      <workItem from="1678956638622" duration="1649000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1678881487583</created>

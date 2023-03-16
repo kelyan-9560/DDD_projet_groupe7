@@ -9,7 +9,8 @@ public interface PoolRepository {
 
     Pool save(Pool pool);
     Pool getById(int id);
-    void addPlayer(int poolId, int playerId);
+    void addPlayer(int poolId, Player player);
+
     void addPlayers(int poolId, List<Player> players);
 
     void deleteById(int id);
