@@ -11,6 +11,4 @@ public interface Verification {
     void checkPool(Pool pool);
     void checkTournament(Tournament tournament);
     void checkAdmin(Admin admin);
-
-    void checkAddress(Address address);
 }
