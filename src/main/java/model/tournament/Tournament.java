@@ -1,5 +1,7 @@
 package model.tournament;
 
+import model.address.Address;
+
 import java.util.Objects;
 
 public class Tournament {
@@ -8,12 +10,23 @@ public class Tournament {
     private String name;
     private TournamentType type;
 
+    private Address address;
+
     public int getId() {
         return id;
     }
 
     public Tournament setId(int id) {
         this.id = id;
+        return this;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public Tournament setAddress(Address address) {
+        this.address = address;
         return this;
     }
 
@@ -35,8 +48,4 @@ public class Tournament {
         return this;
     }
 
-    public void check(){
-        if(Objects.equals(this.name, "")) throw new TournamentNameMissingException();
-        this.type.check();
-    }
 }

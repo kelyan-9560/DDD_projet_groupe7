@@ -5,27 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1dd5b75-56cd-4cf9-adc8-443ed6c445ea" name="Changes" comment="Init project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/player/PlayerLicenseNumberMissingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/player/PlayerNameMissingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/pool/PoolNameMissingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentNameMissingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentTypeNameMissingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/use_case/pool/PoolCreationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/address/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/address/AddressCityMissingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/address/AddressStreetMissingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/address/AddressZipCodeMissingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/admin/AdminException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/admin/AdminMissingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/admin/AdminValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/player/PlayerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/player/PlayerValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/pool/PoolException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/pool/PoolValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/Verification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/Verifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/pool/Pool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/pool/Pool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/use_case/pool/PoolCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/use_case/pool/PoolCreation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/use_case/tounament/SetupTournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/use_case/tounament/SetupTournament.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/use_case/tounament/SetupTournamentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/use_case/tounament/SetupTournamentTest.java" afterDir="false" />
-    </list>
-    <list id="e3163646-f46f-400f-aa44-831d54478fbc" name="Changes by jehan" comment="" />
-    <list id="d62b887b-baee-44d2-ad7b-7d0081b88f93" name="Changes by xof" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/admin/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/admin/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/player/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/pool/Pool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/pool/Pool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/tournament/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tournament/Tournament.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentType.java" afterDir="false" />
     </list>
+    <list id="e3163646-f46f-400f-aa44-831d54478fbc" name="Changes by jehan" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,30 +42,12 @@
       <list>
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="JUnit3 Test Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/model/pool/Pool.java">
-      <ranges>
-        <range start1="3" end1="4" start2="3" end2="3" changelist="c1dd5b75-56cd-4cf9-adc8-443ed6c445ea" />
-        <range start1="5" end1="6" start2="4" end2="4" changelist="c1dd5b75-56cd-4cf9-adc8-443ed6c445ea" />
-        <range start1="7" end1="7" start2="5" end2="6" changelist="d62b887b-baee-44d2-ad7b-7d0081b88f93" />
-        <range start1="16" end1="28" start2="15" end2="15" changelist="c1dd5b75-56cd-4cf9-adc8-443ed6c445ea" />
-        <range start1="63" end1="63" start2="50" end2="57" changelist="d62b887b-baee-44d2-ad7b-7d0081b88f93" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/model/player/Player.java">
-      <ranges>
-        <range start1="10" end1="16" start2="10" end2="10" changelist="c1dd5b75-56cd-4cf9-adc8-443ed6c445ea" />
-        <range start1="44" end1="44" start2="38" end2="45" changelist="d62b887b-baee-44d2-ad7b-7d0081b88f93" />
-      </ranges>
-    </file>
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="4p2nuoib" />
@@ -92,61 +77,32 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
+    "com.google.cloudcode.ide_session_index": "20230316_0002",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/Users/ahmad/Downloads/DDD_projet_groupe7/src/main/java",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "C:/Users/kekeb/Documents/ESGI/4eme_annee/jee/FrameworkJeeGroupe7",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="model.tournament" />
-      <recent name="model.player" />
       <recent name="model.pool" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="model.player" />
+      <recent name="model.admin" />
+      <recent name="model.tournament" />
+      <recent name="model.address" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
-      <recent name="junit.framework.TestCase" />
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="use_case.pool" />
-      <recent name="model.pool" />
       <recent name="use_case.tounament" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="model.tournament" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="PoolCreationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DDD_projet_groupe7" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="use_case.pool.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="use_case.pool" />
-      <option name="MAIN_CLASS_NAME" value="use_case.pool.PoolCreationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.PoolCreationTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -157,7 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678881346055</updated>
       <workItem from="1678881347523" duration="8442000" />
-      <workItem from="1678956638622" duration="6632000" />
+      <workItem from="1678956638622" duration="345000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1678881487583</created>
