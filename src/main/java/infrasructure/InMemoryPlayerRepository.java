@@ -1,15 +1,16 @@
 package infrasructure;
 
 import model.player.Player;
+import model.player.PlayerId;
 import model.player.PlayerRepository;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class InMemoryPlayerRepository implements PlayerRepository {
-    private static Map<String, Player> db = new HashMap<>();
+    private static Map<PlayerId, Player> db = new HashMap<>();
     @Override
-    public Player GetById(int id) {
-        return db.get(Integer.toString(id));
+    public Player GetById(PlayerId playerId) {
+        return db.get(playerId);
     }
 }
