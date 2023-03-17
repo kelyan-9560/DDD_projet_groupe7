@@ -12,6 +12,7 @@ public class Pool {
     private List<Player> players;
     private String name;
     private TournamentId tournamentId;
+    private static final PoolValidator validator = new PoolValidator();
 
     private static final int MAX_PLAYER_PER_POOL = 3;
 
@@ -36,6 +37,9 @@ public class Pool {
                         .setName("Pool " + i)
                         .setTournamentId(tournamentId)
                         .setPlayers(playerInPool);
+
+                validator.check(pool);
+
                 resPools.add(pool);
 
                 playerInPool.clear();
