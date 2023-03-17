@@ -15,6 +15,11 @@ public class InMemoryPoolRepository implements model.pool.PoolRepository {
         return pool;
     }
 
+    public List<Pool> saveAll(List<Pool> pools) {
+        pools.forEach(pool -> db.put(Integer.toString(pool.getId()), pool));
+        return pools;
+    }
+
     @Override
     public Pool getById(int id) {
         return db.get(Integer.toString(id));

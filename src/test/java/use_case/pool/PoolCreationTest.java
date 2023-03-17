@@ -3,7 +3,6 @@ package use_case.pool;
 import infrasructure.InMemoryPlayerRepository;
 import infrasructure.InMemoryPoolRepository;
 import model.player.Player;
-import model.player.PlayerId;
 import model.player.PlayerRepository;
 import model.pool.PoolRepository;
 import model.tournament.Tournament;
@@ -17,7 +16,7 @@ import static org.junit.Assert.assertEquals;
 public class PoolCreationTest {
     PlayerRepository playerRepository = new InMemoryPlayerRepository();
     PoolRepository poolRepository = new InMemoryPoolRepository();
-    
+
 
     @Test
     public void must_setup_2_pools(){
@@ -46,7 +45,7 @@ public class PoolCreationTest {
 
         PoolCreation poolCreation = new PoolCreation(poolRepository, playerRepository);
 
-        var pools = poolCreation.create(playersIds, tournament.getId());
+        var pools = poolCreation.dispatchPlayer(playersIds, tournament.getId());
 
         assertEquals(2, pools.size());
     }
@@ -82,7 +81,7 @@ public class PoolCreationTest {
 
         PoolCreation poolCreation = new PoolCreation(poolRepository, playerRepository);
 
-        var pools = poolCreation.create(playersIds, tournament.getId());
+        var pools = poolCreation.dispatchPlayer(playersIds, tournament.getId());
 
         assertEquals(2, pools.get(pools.size()-1).getPlayers().size());
     }

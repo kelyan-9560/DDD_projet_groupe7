@@ -11,7 +11,6 @@ import java.util.List;
 
 public class PoolCreation {
 
-
     private final PoolRepository poolRepository;
     private final PlayerRepository playerRepository;
 
@@ -20,39 +19,23 @@ public class PoolCreation {
         this.playerRepository = playerRepository;
     }
 
-    //TODO : Passer les id
-    //TODO: injecter les repos
-
 
     // TODO: déplacer la logique dans la classe pool
 
-    public List<Pool> create(List<PlayerId> playerIdList, int tournamentId) {
-        int peoplePerPool = 3;
-
-        List<Pool> resPools = new ArrayList<>();
+    public List<Pool> dispatchPlayer(List<PlayerId> playerIdList, int tournamentId) {
         List<Player> playerInPool = new ArrayList<>();
+        playerIdList.forEach(playerId -> {
+            var player = playerRepository.GetById(playerId);
+            playerInPool.add(player);
+        });
 
-        for (int i = 0; i < playerIdList.size(); i++) {
+        List<Pool> pools = new Pool()
+                .setPlayers(playerInPool)
+                .create(tournamentId);
 
-            var player = playerRepository.GetById(playerIdList.get(i));
+        poolRepository.saveAll(pools);
 
-
-            if(playerInPool.size() < peoplePerPool){
-
-                playerInPool.add(player);
-            }
-            if(playerInPool.size() == peoplePerPool) {
-                var pool = new Pool()
-                        .setId(i)
-                        .setName("Pool " + i)
-                        .setTournamentId(tournamentId)
-                        .setPlayers(playerInPool);
-                resPools.add(pool);
-
-                playerInPool.clear();
-            }
-        }
-        return resPools;
+        return pools;
     }
 
 }
