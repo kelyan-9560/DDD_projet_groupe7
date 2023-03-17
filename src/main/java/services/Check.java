@@ -1,9 +1,5 @@
 package services;
 
-import model.address.Address;
-import model.address.AddressCityMissingException;
-import model.address.AddressStreetMissingException;
-import model.address.AddressZipCodeMissingException;
 import model.admin.Admin;
 import model.admin.AdminMissingException;
 import model.player.Player;
@@ -16,7 +12,7 @@ import model.tournament.TournamentNameMissingException;
 
 import java.util.Objects;
 
-public class Verifier implements Verification{
+public class Check implements Checking {
 
     @Override
     public void checkPlayer(Player player) {
