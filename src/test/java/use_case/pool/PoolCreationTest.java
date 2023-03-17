@@ -28,8 +28,9 @@ public class PoolCreationTest {
     PoolRepository poolRepository = new InMemoryPoolRepository();
     PlayerRepository playerRepository = new InMemoryPlayerRepository();
     PlayerMapper playerMapper = new PlayerMapper(playerRepository);
-
     TournamentRepository tournamentRepository = new InMemoryTournamentRepository();
+
+
 
 
     @Test
@@ -120,7 +121,17 @@ public class PoolCreationTest {
 
     @Test
     public void shouldThrowPoolException(){
-        var pool = new Pool().setId(1).setName("").setTournamentId(tournamentRepository.nextId()).setPlayers(List.of());
+        var players=  List.of(
+                new Player().setId(playerRepository.nextId()).setName("Player 1").setLicenceNumber("1234567890"),
+                new Player().setId(playerRepository.nextId()).setName("Player 2").setLicenceNumber("1234567890")
+        );
+
+
+        var pool = new Pool(
+                poolRepository.nextId(),
+                players,
+                "",
+                tournamentRepository.nextId());
         var validator = new PoolValidator();
         assertThrows(
                 PoolNameMissingException.class, () ->

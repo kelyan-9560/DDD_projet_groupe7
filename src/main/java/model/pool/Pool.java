@@ -8,17 +8,21 @@ import java.util.List;
 
 public class Pool {
 
-    private int id;
+    private PoolId id;
     private List<Player> players;
     private String name;
     private TournamentId tournamentId;
 
     private static final int MAX_PLAYER_PER_POOL = 3;
 
-    //TODO : deplacer du code dans la classe Player pour la rendre riche
+    public Pool(PoolId id, List<Player> players, String name, TournamentId tournamentId) {
+        this.id = id;
+        this.players = players;
+        this.name = name;
+        this.tournamentId = tournamentId;
+    }
 
     public List<Pool> create(TournamentId tournamentId) {
-        int peoplePerPool = 3;
 
         List<Pool> resPools = new ArrayList<>();
         List<Player> playerInPool = new ArrayList<>();
@@ -31,11 +35,13 @@ public class Pool {
             }
 
             if(playerInPool.size() == MAX_PLAYER_PER_POOL) {
-                var pool = new Pool()
-                        .setId(i)
-                        .setName("Pool " + i)
-                        .setTournamentId(tournamentId)
-                        .setPlayers(playerInPool);
+                var pool = new Pool(
+                        PoolId.fromUUID(java.util.UUID.randomUUID()),
+                        playerInPool,
+                        "Pool " + i,
+                        tournamentId
+                );
+
                 resPools.add(pool);
 
                 playerInPool.clear();
@@ -44,11 +50,11 @@ public class Pool {
         return resPools;
     }
 
-    public int getId() {
+    public PoolId getId() {
         return id;
     }
 
-    public Pool setId(int id) {
+    public Pool setId(PoolId id) {
         this.id = id;
         return this;
     }

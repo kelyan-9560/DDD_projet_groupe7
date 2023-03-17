@@ -27,9 +27,12 @@ public class PoolCreation {
     public List<Pool> dispatchPlayer(List<PlayerId> playerIdList, TournamentId tournamentId) {
         List<Player> playerInPool = playerMapper.idsToPlayers(playerIdList);
 
-        List<Pool> pools = new Pool()
-                .setPlayers(playerInPool)
-                .create(tournamentId);
+        List<Pool> pools = new Pool(
+                poolRepository.nextId(),
+                playerInPool,
+                "Pool 1",
+                tournamentId
+        ).create(tournamentId);
 
         poolRepository.saveAll(pools);
 

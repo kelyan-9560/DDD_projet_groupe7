@@ -3,19 +3,24 @@ package model.pool;
 import model.player.Player;
 
 import java.util.List;
+import java.util.UUID;
 
 public interface PoolRepository {
 
     Pool save(Pool pool);
 
     List<Pool> saveAll(List<Pool> pools);
-    Pool getById(int id);
+    Pool getById(PoolId id);
 
-    void addPlayer(int poolId, Player player);
+    void addPlayer(PoolId poolId, Player player);
 
-    void addPlayers(int poolId, List<Player> players);
+    void addPlayers(PoolId poolId, List<Player> players);
 
-    void deleteById(int id);
+    void deleteById(PoolId id);
+
+    default PoolId nextId(){
+        return PoolId.fromUUID(UUID.randomUUID());
+    }
 
 
 }
