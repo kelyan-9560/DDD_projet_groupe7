@@ -1,6 +1,7 @@
 package model.player;
 
 import model.Validator;
+import model.player.exception.PlayerException;
 
 public class PlayerValidator extends Validator<Player> {
     @Override

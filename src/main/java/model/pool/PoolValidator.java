@@ -1,6 +1,7 @@
 package model.pool;
 
 import model.Validator;
+import model.pool.exception.PoolException;
 
 public class PoolValidator extends Validator<Pool> {
 
