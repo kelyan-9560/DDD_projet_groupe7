@@ -1,6 +1,7 @@
 package model.player;
 
 import model.address.Address;
+import model.tournament.Tournament;
 
 import java.util.Objects;
 
@@ -21,6 +22,10 @@ public class Player {
     public Player setId(PlayerId id) {
         this.id = id;
         return this;
+    }
+
+    public void joinTournament(Tournament tournament){
+        tournament.addPlayerToTournament(this);
     }
 
     public String getName() {

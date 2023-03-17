@@ -1,7 +1,10 @@
 package model.tournament;
 
 import model.address.Address;
+import model.player.Player;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Tournament {
@@ -12,6 +15,12 @@ public class Tournament {
     private String name;
     private TournamentType type;
     private Address address;
+
+    private List<Player> subscriber = new ArrayList<>();
+
+    public void addPlayerToTournament(Player player){
+        this.subscriber.add(player);
+    }
 
     public int getId() {
         return id;
