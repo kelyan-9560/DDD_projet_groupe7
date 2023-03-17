@@ -10,7 +10,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/model/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/player/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/pool/Pool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/pool/Pool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/tournament/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tournament/Tournament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/use_case/pool/PoolCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/use_case/pool/PoolCreation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/use_case/pool/PoolCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/use_case/pool/PoolCreationTest.java" afterDir="false" />
     </list>
     <list id="4a8abce0-e5c7-4834-a2f3-573b9dec093d" name="Changes by xof" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +136,7 @@
       <updated>1678881346055</updated>
       <workItem from="1678881347523" duration="8442000" />
       <workItem from="1678956638622" duration="345000" />
-      <workItem from="1679042406551" duration="1763000" />
+      <workItem from="1679042406551" duration="2712000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1678881487583</created>
@@ -152,5 +154,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init project" />
     <option name="LAST_COMMIT_MESSAGE" value="Init project" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DDD_projet_groupe7$All_in_DDD_projet_groupe7.ic" NAME="All in DDD_projet_groupe7 Coverage Results" MODIFIED="1679044175457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
