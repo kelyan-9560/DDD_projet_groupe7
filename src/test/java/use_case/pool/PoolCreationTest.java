@@ -2,10 +2,19 @@ package use_case.pool;
 
 import infrasructure.InMemoryPlayerRepository;
 import infrasructure.InMemoryPoolRepository;
+import model.address.Address;
+import model.address.AddressZipCodeNotANumberException;
+import model.admin.Admin;
+import model.admin.AdminMissingException;
+import model.admin.AdminValidator;
 import model.player.Player;
+import model.player.PlayerLicenseNumberMissingException;
 import model.player.PlayerRepository;
+import model.player.PlayerValidator;
+import model.pool.PoolNameMissingException;
 import model.pool.PoolRepository;
 import model.pool.PoolValidator;
+import model.pool.Pool;
 import model.tournament.Tournament;
 import model.tournament.TournamentNameMissingException;
 import model.tournament.TournamentType;
@@ -48,7 +57,7 @@ public class PoolCreationTest {
 
         PoolCreation poolCreation = new PoolCreation(poolRepository, playerRepository);
 
-        var pools = poolCreation.create(playersIds, tournament.getId());
+        var pools = poolCreation.dispatchPlayer(playersIds, tournament.getId());
 
         assertEquals(2, pools.size());
     }
@@ -84,7 +93,7 @@ public class PoolCreationTest {
 
         PoolCreation poolCreation = new PoolCreation(poolRepository, playerRepository);
 
-        var pools = poolCreation.create(playersIds, tournament.getId());
+        var pools = poolCreation.dispatchPlayer(playersIds, tournament.getId());
 
         assertEquals(2, pools.get(pools.size()-1).getPlayers().size());
     }
