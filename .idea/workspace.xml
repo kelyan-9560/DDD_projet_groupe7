@@ -4,6 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
+    <list default="true" id="5e32c3ac-e8e8-43d8-bc3a-a6482ffe968f" name="Changes" comment="" />
+
     <list default="true" id="5e32c3ac-e8e8-43d8-bc3a-a6482ffe968f" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -136,7 +139,7 @@
       <updated>1678881346055</updated>
       <workItem from="1678881347523" duration="8442000" />
       <workItem from="1678956638622" duration="345000" />
-      <workItem from="1679042406551" duration="2712000" />
+      <workItem from="1679042406551" duration="3309000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1678881487583</created>
