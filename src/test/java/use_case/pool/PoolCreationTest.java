@@ -2,14 +2,8 @@ package use_case.pool;
 
 import infrasructure.InMemoryPlayerRepository;
 import infrasructure.InMemoryPoolRepository;
-import model.address.Address;
-import model.address.AddressZipCodeNotANumberException;
-import model.admin.Admin;
-import model.admin.AdminMissingException;
-import model.admin.AdminValidator;
-import model.player.*;
-import model.pool.Pool;
-import model.pool.PoolNameMissingException;
+import model.player.Player;
+import model.player.PlayerRepository;
 import model.pool.PoolRepository;
 import model.pool.PoolValidator;
 import model.tournament.Tournament;
@@ -25,7 +19,7 @@ import static org.junit.Assert.*;
 public class PoolCreationTest {
     PlayerRepository playerRepository = new InMemoryPlayerRepository();
     PoolRepository poolRepository = new InMemoryPoolRepository();
-    
+
 
     @Test
     public void must_setup_2_pools(){

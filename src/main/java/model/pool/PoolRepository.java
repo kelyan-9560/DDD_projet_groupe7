@@ -7,6 +7,8 @@ import java.util.List;
 public interface PoolRepository {
 
     Pool save(Pool pool);
+
+    List<Pool> saveAll(List<Pool> pools);
     Pool getById(int id);
 
     void addPlayer(int poolId, Player player);
