@@ -2,6 +2,7 @@ package use_case.pool;
 
 import infrasructure.InMemoryPlayerRepository;
 import infrasructure.InMemoryPoolRepository;
+import mapper.PlayerMapper;
 import model.address.Address;
 import model.address.AddressZipCodeNotANumberException;
 import model.admin.Admin;
@@ -26,8 +27,9 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 public class PoolCreationTest {
-    PlayerRepository playerRepository = new InMemoryPlayerRepository();
     PoolRepository poolRepository = new InMemoryPoolRepository();
+    PlayerRepository playerRepository = new InMemoryPlayerRepository();
+    PlayerMapper playerMapper = new PlayerMapper(playerRepository);
 
 
     @Test
@@ -55,7 +57,7 @@ public class PoolCreationTest {
                 .setType(new TournamentType().setValue("Type 1"));
 
 
-        PoolCreation poolCreation = new PoolCreation(poolRepository, playerRepository);
+        PoolCreation poolCreation = new PoolCreation(poolRepository, playerRepository, playerMapper);
 
         var pools = poolCreation.dispatchPlayer(playersIds, tournament.getId());
 
@@ -91,7 +93,7 @@ public class PoolCreationTest {
                 .setName("Tournament Test")
                 .setType(new TournamentType().setValue("Type 1"));
 
-        PoolCreation poolCreation = new PoolCreation(poolRepository, playerRepository);
+        PoolCreation poolCreation = new PoolCreation(poolRepository, playerRepository, playerMapper);
 
         var pools = poolCreation.dispatchPlayer(playersIds, tournament.getId());
 
