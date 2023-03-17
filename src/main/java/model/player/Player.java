@@ -6,7 +6,6 @@ import model.tournament.Tournament;
 import java.util.Objects;
 
 
-//TODO : rendre la classe RICHE
 public class Player {
 
     private PlayerId id;

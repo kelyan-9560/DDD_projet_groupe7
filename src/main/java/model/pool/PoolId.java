@@ -1,5 +1,7 @@
 package model.pool;
 
+import java.util.Objects;
+
 public class PoolId {
 
     private final String value;
@@ -27,4 +29,16 @@ public class PoolId {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        PoolId poolId = (PoolId) o;
+        return Objects.equals(value, poolId.value);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(value);
+    }
 }
