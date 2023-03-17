@@ -8,16 +8,16 @@ public class Tournament {
 
     //TODO : Value Object TournamentID
 
-    private int id;
+    private TournamentId id;
     private String name;
     private TournamentType type;
     private Address address;
 
-    public int getId() {
+    public TournamentId getId() {
         return id;
     }
 
-    public Tournament setId(int id) {
+    public Tournament setId(TournamentId id) {
         this.id = id;
         return this;
     }

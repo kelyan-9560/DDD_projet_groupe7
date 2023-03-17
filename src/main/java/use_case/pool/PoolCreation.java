@@ -6,6 +6,7 @@ import model.player.PlayerId;
 import model.player.PlayerRepository;
 import model.pool.Pool;
 import model.pool.PoolRepository;
+import model.tournament.TournamentId;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +24,7 @@ public class PoolCreation {
     }
 
 
-    public List<Pool> dispatchPlayer(List<PlayerId> playerIdList, int tournamentId) {
+    public List<Pool> dispatchPlayer(List<PlayerId> playerIdList, TournamentId tournamentId) {
         List<Player> playerInPool = playerMapper.idsToPlayers(playerIdList);
 
         List<Pool> pools = new Pool()

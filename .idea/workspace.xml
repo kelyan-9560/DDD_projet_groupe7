@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e32c3ac-e8e8-43d8-bc3a-a6482ffe968f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mapper/PlayerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exception/ExcedPlayersInPoolException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exception/ExcedPlayersInPoolException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exception/NoPoolNameException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exception/NoPoolNameException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/pool/Pool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/pool/Pool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/tournament/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tournament/Tournament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/use_case/pool/PoolCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/use_case/pool/PoolCreation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/use_case/pool/PoolCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/use_case/pool/PoolCreationTest.java" afterDir="false" />
     </list>
@@ -129,7 +128,7 @@
       <updated>1678881346055</updated>
       <workItem from="1678881347523" duration="8442000" />
       <workItem from="1678956638622" duration="345000" />
-      <workItem from="1679042406551" duration="2398000" />
+      <workItem from="1679042406551" duration="2712000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1678881487583</created>

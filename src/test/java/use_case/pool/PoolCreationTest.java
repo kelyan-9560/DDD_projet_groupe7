@@ -2,6 +2,7 @@ package use_case.pool;
 
 import infrasructure.InMemoryPlayerRepository;
 import infrasructure.InMemoryPoolRepository;
+import infrasructure.InMemoryTournamentRepository;
 import mapper.PlayerMapper;
 import model.address.Address;
 import model.address.AddressZipCodeNotANumberException;
@@ -16,10 +17,7 @@ import model.pool.PoolNameMissingException;
 import model.pool.PoolRepository;
 import model.pool.PoolValidator;
 import model.pool.Pool;
-import model.tournament.Tournament;
-import model.tournament.TournamentNameMissingException;
-import model.tournament.TournamentType;
-import model.tournament.TournamentValidator;
+import model.tournament.*;
 import org.junit.Test;
 
 import java.util.List;
@@ -30,6 +28,8 @@ public class PoolCreationTest {
     PoolRepository poolRepository = new InMemoryPoolRepository();
     PlayerRepository playerRepository = new InMemoryPlayerRepository();
     PlayerMapper playerMapper = new PlayerMapper(playerRepository);
+
+    TournamentRepository tournamentRepository = new InMemoryTournamentRepository();
 
 
     @Test
@@ -52,7 +52,7 @@ public class PoolCreationTest {
         );
 
         var tournament = new Tournament()
-                .setId(1)
+                .setId(tournamentRepository.nextId())
                 .setName("Tournament Test")
                 .setType(new TournamentType().setValue("Type 1"));
 
@@ -89,7 +89,7 @@ public class PoolCreationTest {
         );
 
         var tournament = new Tournament()
-                .setId(1)
+                .setId(tournamentRepository.nextId())
                 .setName("Tournament Test")
                 .setType(new TournamentType().setValue("Type 1"));
 
@@ -120,7 +120,7 @@ public class PoolCreationTest {
 
     @Test
     public void shouldThrowPoolException(){
-        var pool = new Pool().setId(1).setName("").setTournamentId(1).setPlayers(List.of());
+        var pool = new Pool().setId(1).setName("").setTournamentId(tournamentRepository.nextId()).setPlayers(List.of());
         var validator = new PoolValidator();
         assertThrows(
                 PoolNameMissingException.class, () ->
@@ -130,7 +130,7 @@ public class PoolCreationTest {
 
     @Test
     public void shouldThrowTournamentException(){
-        var tournament = new Tournament().setId(1).setName("");
+        var tournament = new Tournament().setId(tournamentRepository.nextId()).setName("");
         var validator = new TournamentValidator();
         assertThrows(
                 TournamentNameMissingException.class, () ->

@@ -1,6 +1,7 @@
 package model.pool;
 
 import model.player.Player;
+import model.tournament.TournamentId;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,11 +11,11 @@ public class Pool {
     private int id;
     private List<Player> players;
     private String name;
-    private int tournamentId;
+    private TournamentId tournamentId;
 
     //TODO : deplacer du code dans la classe Player pour la rendre riche
 
-    public List<Pool> create(int tournamentId) {
+    public List<Pool> create(TournamentId tournamentId) {
         int peoplePerPool = 3;
 
         List<Pool> resPools = new ArrayList<>();
@@ -69,11 +70,11 @@ public class Pool {
         return this;
     }
 
-    public int getTournamentId() {
+    public TournamentId getTournamentId() {
         return tournamentId;
     }
 
-    public Pool setTournamentId(int tournamentId) {
+    public Pool setTournamentId(TournamentId tournamentId) {
         this.tournamentId = tournamentId;
         return this;
     }
