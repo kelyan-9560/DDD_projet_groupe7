@@ -13,6 +13,7 @@ import model.player.Player;
 import model.player.exception.PlayerLicenseNumberMissingException;
 import model.player.PlayerRepository;
 import model.player.PlayerValidator;
+import model.player.exception.PoolNameMissingException;
 import model.pool.PoolRepository;
 import model.pool.PoolValidator;
 import model.pool.Pool;
@@ -134,7 +135,7 @@ public class PoolCreationTest {
                 tournamentRepository.nextId());
         var validator = new PoolValidator();
         assertThrows(
-                Pool.PoolNameMissingException.class, () ->
+                PoolNameMissingException.class, () ->
                         validator.check(pool)
         );
     }

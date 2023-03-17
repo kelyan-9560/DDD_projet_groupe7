@@ -5,6 +5,7 @@ import model.admin.exception.AdminMissingException;
 import model.player.Player;
 import model.player.exception.PlayerLicenceNotANumberException;
 import model.player.exception.PlayerLicenseNumberMissingException;
+import model.player.exception.PoolNameMissingException;
 import model.player.exception.PlayerNameMissingException;
 import model.pool.Pool;
 import model.tournament.Tournament;
@@ -32,7 +33,7 @@ public class Check implements Checking {
     @Override
     public void checkPool(Pool pool) {
         if(Objects.equals(pool.getName(), "")){
-            throw new Pool.PoolNameMissingException();
+            throw new PoolNameMissingException();
         }
     }
 
