@@ -13,6 +13,8 @@ public class Pool {
     private String name;
     private TournamentId tournamentId;
 
+    private static final int MAX_PLAYER_PER_POOL = 3;
+
     //TODO : deplacer du code dans la classe Player pour la rendre riche
 
     public List<Pool> create(TournamentId tournamentId) {
@@ -24,11 +26,11 @@ public class Pool {
         for (int i = 0; i < players.size(); i++) {
             var player = players.get(i);
 
-            if(playerInPool.size() < peoplePerPool){
+            if(playerInPool.size() < MAX_PLAYER_PER_POOL){
                 playerInPool.add(player);
             }
 
-            if(playerInPool.size() == peoplePerPool) {
+            if(playerInPool.size() == MAX_PLAYER_PER_POOL) {
                 var pool = new Pool()
                         .setId(i)
                         .setName("Pool " + i)
@@ -41,7 +43,6 @@ public class Pool {
         }
         return resPools;
     }
-
 
     public int getId() {
         return id;
