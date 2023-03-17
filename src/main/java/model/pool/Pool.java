@@ -88,16 +88,4 @@ public class Pool {
         return this;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Pool pool = (Pool) o;
-        return Objects.equals(id, pool.id) && Objects.equals(players, pool.players) && Objects.equals(name, pool.name) && Objects.equals(tournamentId, pool.tournamentId);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, players, name, tournamentId);
-    }
 }
