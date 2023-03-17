@@ -1,12 +1,12 @@
 package model;
 
-import services.Verification;
-import services.Verifier;
+import services.Checking;
+import services.Check;
 
 public abstract class Validator<T> {
 
     public abstract void check(T t);
 
-    public Verification verifier = new Verifier();
+    public Checking verifier = new Check();
 }
 
