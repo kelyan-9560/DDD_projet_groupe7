@@ -1,6 +1,6 @@
 package use_case.pool;
 
-import mapper.PlayerMapper;
+import infrasructure.mapper.PlayerMapper;
 import model.player.Player;
 import model.player.PlayerId;
 import model.player.PlayerRepository;
@@ -8,7 +8,6 @@ import model.pool.Pool;
 import model.pool.PoolRepository;
 import model.tournament.TournamentId;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class PoolCreation {

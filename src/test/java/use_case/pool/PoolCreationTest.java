@@ -3,7 +3,7 @@ package use_case.pool;
 import infrasructure.InMemoryPlayerRepository;
 import infrasructure.InMemoryPoolRepository;
 import infrasructure.InMemoryTournamentRepository;
-import mapper.PlayerMapper;
+import infrasructure.mapper.PlayerMapper;
 import model.address.Address;
 import model.address.exception.AddressZipCodeNotANumberException;
 import model.admin.Admin;

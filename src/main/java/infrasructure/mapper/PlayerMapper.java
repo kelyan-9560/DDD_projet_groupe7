@@ -1,4 +1,4 @@
-package mapper;
+package infrasructure.mapper;
 
 import model.player.Player;
 import model.player.PlayerId;
