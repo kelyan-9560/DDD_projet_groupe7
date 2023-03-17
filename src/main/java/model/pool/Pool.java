@@ -1,11 +1,9 @@
 package model.pool;
 
 import model.player.Player;
-import model.player.PlayerId;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class Pool {
 
