@@ -42,8 +42,7 @@ public class Pool {
                         "Pool " + i,
                         tournamentId
                 );
-
-
+                validator.check(pool);
                 resPools.add(pool);
 
                 playerInPool.clear();
