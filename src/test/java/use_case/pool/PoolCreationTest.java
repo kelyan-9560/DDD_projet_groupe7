@@ -2,16 +2,28 @@ package use_case.pool;
 
 import infrasructure.InMemoryPlayerRepository;
 import infrasructure.InMemoryPoolRepository;
+import model.address.Address;
+import model.address.AddressZipCodeNotANumberException;
+import model.admin.Admin;
+import model.admin.AdminMissingException;
+import model.admin.AdminValidator;
 import model.player.Player;
+import model.player.PlayerLicenseNumberMissingException;
 import model.player.PlayerRepository;
+import model.player.PlayerValidator;
+import model.pool.PoolNameMissingException;
 import model.pool.PoolRepository;
+import model.pool.PoolValidator;
+import model.pool.Pool;
 import model.tournament.Tournament;
+import model.tournament.TournamentNameMissingException;
 import model.tournament.TournamentType;
+import model.tournament.TournamentValidator;
 import org.junit.Test;
 
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class PoolCreationTest {
     PlayerRepository playerRepository = new InMemoryPlayerRepository();
@@ -84,5 +96,53 @@ public class PoolCreationTest {
         var pools = poolCreation.dispatchPlayer(playersIds, tournament.getId());
 
         assertEquals(2, pools.get(pools.size()-1).getPlayers().size());
+    }
+
+    @Test
+    public void shouldThrowAddressException(){
+        assertThrows(
+                AddressZipCodeNotANumberException.class, () ->
+            new Player().setId(playerRepository.nextId()).setName("Player 1").setLicenceNumber("1234567890").setAddress(new Address("Street","city","zipcode"))
+        );
+    }
+
+    @Test
+    public void shouldThrowPlayerException(){
+        var player = new Player().setId(playerRepository.nextId()).setName("Player 1").setLicenceNumber("").setAddress(new Address("Street","city","12345"));
+        var validator = new PlayerValidator();
+        assertThrows(
+                PlayerLicenseNumberMissingException.class, () ->
+                        validator.check(player)
+        );
+    }
+
+    @Test
+    public void shouldThrowPoolException(){
+        var pool = new Pool().setId(1).setName("").setTournamentId(1).setPlayers(List.of());
+        var validator = new PoolValidator();
+        assertThrows(
+                PoolNameMissingException.class, () ->
+                        validator.check(pool)
+        );
+    }
+
+    @Test
+    public void shouldThrowTournamentException(){
+        var tournament = new Tournament().setId(1).setName("");
+        var validator = new TournamentValidator();
+        assertThrows(
+                TournamentNameMissingException.class, () ->
+                        validator.check(tournament)
+        );
+    }
+
+    @Test
+    public void shouldThrowAdminException(){
+        var admin = new Admin().setId(1).setName("");
+        var validator = new AdminValidator();
+        assertThrows(
+                AdminMissingException.class,() ->
+                        validator.check(admin)
+        );
     }
 }
