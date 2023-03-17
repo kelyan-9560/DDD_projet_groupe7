@@ -6,10 +6,11 @@ import java.util.Objects;
 
 public class Tournament {
 
+    //TODO : Value Object TournamentID
+
     private int id;
     private String name;
     private TournamentType type;
-
     private Address address;
 
     public int getId() {

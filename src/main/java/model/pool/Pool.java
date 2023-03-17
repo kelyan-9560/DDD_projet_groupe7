@@ -1,11 +1,9 @@
 package model.pool;
 
 import model.player.Player;
-import model.player.PlayerId;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class Pool {
 
@@ -13,7 +11,9 @@ public class Pool {
     private List<Player> players;
     private String name;
     private int tournamentId;
-    
+
+    //TODO : deplacer du code dans la classe Player pour la rendre riche
+
     public List<Pool> create(int tournamentId) {
         int peoplePerPool = 3;
 
@@ -36,7 +36,6 @@ public class Pool {
                 resPools.add(pool);
 
                 playerInPool.clear();
-                //poolRepository.save(pool);
             }
         }
         return resPools;

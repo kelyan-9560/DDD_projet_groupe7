@@ -4,6 +4,8 @@ import model.address.Address;
 
 import java.util.Objects;
 
+
+//TODO : rendre la classe RICHE
 public class Player {
 
     private PlayerId id;

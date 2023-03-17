@@ -20,8 +20,6 @@ public class PoolCreation {
     }
 
 
-    // TODO: déplacer la logique dans la classe pool
-
     public List<Pool> dispatchPlayer(List<PlayerId> playerIdList, int tournamentId) {
         List<Player> playerInPool = new ArrayList<>();
         playerIdList.forEach(playerId -> {

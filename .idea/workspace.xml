@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e32c3ac-e8e8-43d8-bc3a-a6482ffe968f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/tournament/TournamentId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/pool/Pool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/pool/Pool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/tournament/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/tournament/Tournament.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/use_case/pool/PoolCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/use_case/pool/PoolCreation.java" afterDir="false" />
     </list>
-    <list id="4a8abce0-e5c7-4834-a2f3-573b9dec093d" name="Changes by xof" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/use_case/pool/PoolCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/use_case/pool/PoolCreationTest.java" afterDir="false" />
-    </list>
+    <list id="4a8abce0-e5c7-4834-a2f3-573b9dec093d" name="Changes by xof" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +87,15 @@
       <recent name="use_case.tounament" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.All in DDD_projet_groupe7">
+    <configuration name="All in DDD_projet_groupe7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DDD_projet_groupe7" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PoolCreationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DDD_projet_groupe7" />
       <extension name="coverage">
@@ -105,6 +113,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in DDD_projet_groupe7" />
         <item itemvalue="JUnit.PoolCreationTest" />
       </list>
     </recent_temporary>
@@ -119,7 +128,7 @@
       <updated>1678881346055</updated>
       <workItem from="1678881347523" duration="8442000" />
       <workItem from="1678956638622" duration="345000" />
-      <workItem from="1679042406551" duration="429000" />
+      <workItem from="1679042406551" duration="1763000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1678881487583</created>
