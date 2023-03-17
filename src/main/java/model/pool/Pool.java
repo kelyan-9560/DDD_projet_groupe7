@@ -87,4 +87,6 @@ public class Pool {
         return this;
     }
 
+    public static class PoolNameMissingException extends RuntimeException {
+    }
 }

@@ -1,14 +1,14 @@
 package services;
 
 import model.admin.Admin;
-import model.admin.AdminMissingException;
+import model.admin.exception.AdminMissingException;
 import model.player.Player;
-import model.player.PlayerLicenseNumberMissingException;
-import model.player.PlayerNameMissingException;
+import model.player.exception.PlayerLicenceNotANumberException;
+import model.player.exception.PlayerLicenseNumberMissingException;
+import model.player.exception.PlayerNameMissingException;
 import model.pool.Pool;
-import model.pool.PoolNameMissingException;
 import model.tournament.Tournament;
-import model.tournament.TournamentNameMissingException;
+import model.tournament.exception.TournamentNameMissingException;
 
 import java.util.Objects;
 
@@ -18,14 +18,21 @@ public class Check implements Checking {
     public void checkPlayer(Player player) {
         if(Objects.equals(player.getName(), ""))
             throw new PlayerNameMissingException();
+
         if(Objects.equals(player.getLicenceNumber(), ""))
             throw new PlayerLicenseNumberMissingException();
+
+        try {
+            Float.parseFloat(player.getLicenceNumber());
+        } catch (NumberFormatException e) {
+            throw new PlayerLicenceNotANumberException();
+        }
     }
 
     @Override
     public void checkPool(Pool pool) {
         if(Objects.equals(pool.getName(), "")){
-            throw new PoolNameMissingException();
+            throw new Pool.PoolNameMissingException();
         }
     }
 

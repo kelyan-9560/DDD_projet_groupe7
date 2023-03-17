@@ -1,5 +1,7 @@
 package model.tournament;
 
+import model.tournament.exception.TournamentTypeNameMissingException;
+
 import java.util.Objects;
 
 public class TournamentType {

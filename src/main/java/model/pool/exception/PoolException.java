@@ -1,4 +1,4 @@
-package model.pool;
+package model.pool.exception;
 
 public class PoolException extends RuntimeException {
 }

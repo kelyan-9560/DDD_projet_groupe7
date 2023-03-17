@@ -1,6 +1,7 @@
 package model.tournament;
 
 import model.Validator;
+import model.tournament.exception.TournamentException;
 
 public class TournamentValidator extends Validator<Tournament> {
     @Override
