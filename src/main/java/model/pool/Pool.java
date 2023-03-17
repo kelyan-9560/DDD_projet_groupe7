@@ -5,6 +5,7 @@ import model.tournament.TournamentId;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Pool {
 
@@ -87,6 +88,16 @@ public class Pool {
         return this;
     }
 
-    public static class PoolNameMissingException extends RuntimeException {
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Pool pool = (Pool) o;
+        return Objects.equals(id, pool.id) && Objects.equals(players, pool.players) && Objects.equals(name, pool.name) && Objects.equals(tournamentId, pool.tournamentId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, players, name, tournamentId);
     }
 }
